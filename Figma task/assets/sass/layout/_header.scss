@@ -1,0 +1,94 @@
+header {
+  .header {
+    background-color: $header-color;
+    padding: 10px 0;
+  }
+  #header-section-1 {
+    padding: 20px;
+    .fa-solid {
+      color: $color-white;
+      a {
+        color: $header-text;
+        font-size: 12px;
+        padding: 5px;
+      }
+    }
+    @include flexbox();
+    nav {
+      ul {
+        display: flex;
+        column-gap: 20px;
+        li {
+          a {
+            color: $header-text;
+          }
+        }
+      }
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+    .fa-solid.fa-bars {
+      display: none;
+      @media screen and (max-width: 767px) {
+        display: block;
+      }
+    }
+  }
+  #header-section-2 {
+    .header-section-2-top {
+        @media screen and (max-width:767px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+      padding: 50px 0;
+      @include flexbox();
+      p {
+      
+        color: $color-black;
+        font-size: 50px;
+        font-family: "Palanquin Dark", sans-serif;
+      }
+      .top-icon {
+        @media screen and (max-width:767px) {
+            display: none;
+        }
+        a {
+          color: $color-black-text;
+        }
+        display: flex;
+        column-gap: 20px;
+        
+        .top-icon-3 {
+          .fa-solid.fa-bag-shopping {
+            color: rgba(162, 159, 159, 0.241);
+          }
+        }
+      }
+    }
+    .header-section-2-bottom {
+      padding: 20px 0;
+      nav {
+      
+        ul {
+          display: flex;
+          column-gap: 8%;
+            @media  screen and (max-width:767px) {
+          display: block;  
+          text-align: center;
+          line-height: 60px;
+        }
+          li {
+            a {
+              color: $color-black-text;
+            }
+            
+          
+        }
+      }
+   
+      }
+    }
+  }
+}

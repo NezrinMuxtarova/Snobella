@@ -1,0 +1,11 @@
+@mixin flexbox ($a:space-between, $b:center){
+    display: flex;
+    justify-content: $a;
+    align-items: $b;
+}
+@mixin Flexbox ($c:center, $d:center ){
+    display: flex;
+    flex-direction: column;
+    justify-content: $c;
+    align-items: $d;
+}

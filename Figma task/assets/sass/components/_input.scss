@@ -1,0 +1,48 @@
+.top-input {
+  display: flex;
+  position: relative;
+  .top-input-1 {
+    input {
+      width: 420px;
+      padding: 10px 0;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      padding-left: 10px;
+      padding-right: 25px;
+    }
+  }
+  .search {
+    position: absolute;
+    right: 33%;
+    top: 17%;
+  }
+  @media screen and (max-width: 1100px) {
+    display: none;
+  }
+}
+.top-input-footer {
+  .top-input-1 {
+    position: relative;
+
+    input {
+      width: 420px;
+      padding: 10px 0;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      padding-left: 10px;
+      padding-right: 25px;
+    }
+    .fa-solid {
+      position: absolute;
+      top: 8px;
+      right: 10px;
+      z-index: 1;
+    
+    }
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}
