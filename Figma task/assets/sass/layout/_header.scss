@@ -56,6 +56,12 @@ header {
         }
         a {
           color: $color-black-text;
+          transition: all 0.5s;
+              &:hover{
+                background-color: $color-pink;
+                padding: 10px 20px;
+                border-radius: 5px;;
+              }
         }
         display: flex;
         column-gap: 20px;
@@ -82,6 +88,12 @@ header {
           li {
             a {
               color: $color-black-text;
+              transition: all 0.5s;
+              &:hover{
+                background-color: $color-pink;
+                padding: 10px 20px;
+                border-radius: 5px;;
+              }
             }
             
           

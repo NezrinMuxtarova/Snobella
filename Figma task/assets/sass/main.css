@@ -75,6 +75,7 @@ table {
   height: 40px;
   border: none;
   cursor: pointer;
+  transition: all 0.5s;
 }
 .button:hover {
   background-color: transparent;
@@ -87,6 +88,7 @@ table {
   border-radius: 8px;
   padding: 8px;
   margin: 20px 0;
+  transition: all 0.5s;
   cursor: pointer;
 }
 .card:hover {
@@ -96,6 +98,7 @@ table {
 }
 
 .cards {
+  transition: all 0.5s;
   width: 40%;
   border-radius: 8px;
   padding: 8px;
@@ -242,6 +245,12 @@ header #header-section-2 .header-section-2-top .top-icon {
 }
 header #header-section-2 .header-section-2-top .top-icon a {
   color: rgb(39, 49, 66);
+  transition: all 0.5s;
+}
+header #header-section-2 .header-section-2-top .top-icon a:hover {
+  background-color: rgb(255, 247, 247);
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 header #header-section-2 .header-section-2-top .top-icon .top-icon-3 .fa-solid.fa-bag-shopping {
   color: rgba(162, 159, 159, 0.241);
@@ -263,6 +272,12 @@ header #header-section-2 .header-section-2-bottom nav ul {
 }
 header #header-section-2 .header-section-2-bottom nav ul li a {
   color: rgb(39, 49, 66);
+  transition: all 0.5s;
+}
+header #header-section-2 .header-section-2-bottom nav ul li a:hover {
+  background-color: rgb(255, 247, 247);
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 
 footer #footer {
@@ -366,7 +381,7 @@ footer .footer-middle .footer-bottom .footer-bottom-1 p {
   #home-section-1 .home-section-1 .home-section-1-right {
     position: relative;
     right: 15%;
-    left: 9%;
+    left: -5%;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -496,7 +511,7 @@ footer .footer-middle .footer-bottom .footer-bottom-1 p {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 20px;
+    margin: 20px 0;
   }
 }
 @media screen and (max-width: 767px) {
